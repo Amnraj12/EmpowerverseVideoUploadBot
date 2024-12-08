@@ -53,25 +53,23 @@ video-bot/
 - Pip (Python package manager)
 
 ### Clone Repository
-
-bash git clone <repository-url> cd video-bot
-
-shell
-Copy code
+```
+git clone <repository-url> 
+cd video-bot
+```
 
 ### Install Dependencies
+```
+pip install -r requirements.txt
+```
 
-bash pip install -r requirements.txt
-
-mathematica
-Copy code
 
 ### Run the Application
 
 Launch the bot using the following command:
-
-bash python main.py
-
+```
+python main.py
+```
 
 ---
 
@@ -80,12 +78,12 @@ bash python main.py
 ### Login:
 
 1. Enter your Empowerverse username and password.
-2. Click **"Login"**. Upon success, the API token is fetched automatically.
+2. Click **"Login"**. Upon success, the API token is fetched automatically, and you'll be redirected to the main screen.
 
 ### Provide Video URL:
 
-1. Paste the Instagram Reel URL into the input field.
-2. Optionally, provide a title for the video.
+1. Paste the Instagram Reel URL into the provided input field.
+2. Optionally, provide a title for the video post.
 
 ### Upload Video:
 
@@ -151,22 +149,25 @@ Click **"Logout"** to return to the login screen and clear your session.
 - **Endpoint**: `/user/token`
 - **Method**: GET
 - **Query Parameters**:
-plaintext username=<your_username> password=<your_password>
-
+```
+username=<your_username> password=<your_password>
+```
 
 - **Response**:
+```
 json { "token": "<Flic-Token>" }
-
+```
 
 ### 2. Get Upload URL
 - **Endpoint**: `/posts/generate-upload-url`
 - **Method**: GET
 - **Headers**:
-json { "Flic-Token": "<your_flic_token>", "Content-Type": "application/json" }
-
+  ```
+  { "Flic-Token": "<your_flic_token>", "Content-Type": "application/json" }
+  ```
 
 ### 3. Upload Video
-- **Endpoint**: `<upload_url>` (from Step 2)
+- **Endpoint**: `<upload_url>` (provided by the previous API)
 - **Method**: PUT
 - **Body**: Binary video file.
 
@@ -174,8 +175,9 @@ json { "Flic-Token": "<your_flic_token>", "Content-Type": "application/json" }
 - **Endpoint**: `/posts`
 - **Method**: POST
 - **Headers**:
-json { "Flic-Token": "<your_flic_token>", "Content-Type": "application/json" }
-
+  ```
+  { "Flic-Token": "<your_flic_token>", "Content-Type": "application/json" }
+  ```
 
 - **Body**:
 json { "title": "<video_title>", "hash": "<video_hash>", "is_available_in_public_feed": true, "category_id": 25 }
