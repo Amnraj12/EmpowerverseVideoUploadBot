@@ -150,6 +150,7 @@ Click **"Logout"** to return to the login screen and clear your session.
 - **Method**: GET
 - **Query Parameters**:
 ```
+plaintext
 username=<your_username>
 password=<your_password>
 ```
@@ -191,16 +192,16 @@ password=<your_password>
 ## ❓ FAQ
 
 1. **How do I fetch my Flic-Token?**
- - The bot automatically fetches your token upon login.
+ - You do not need to manually fetch the token. The bot fetches it automatically upon successful login.
 
 2. **What happens to my videos after upload?**
  - They are deleted from your local system after a successful upload.
 
 3. **Why is my upload failing?**
  - Check:
-   - URL validity.
-   - Internet connection.
-   - Empowerverse credentials.
+   - Ensure the video URL is correct and publicly accessible.
+   - Check your internet connection.
+   - Verify your Empowerverse credentials.
 
 ---
 
@@ -217,4 +218,4 @@ This project was built using the following tools and resources:
 
 ## ⚠️ Disclaimer
 
-This project is intended for personal or educational use.
+This project is intended for personal or educational use. Please respect the terms of service of Empowerverse and Instagram.
