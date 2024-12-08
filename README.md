@@ -28,10 +28,10 @@ Here’s what the Empowerverse Video Bot looks like in action:
 ![Login Screen](https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/a85858e1c95deeecc6ce428dce2a72487d3f343f/Login%20Screenshot.png)
 
 ### Main Screen
-![Main Screen](path-to-your-main-screen-screenshot.png)
+![Main Screen](https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/MainPage.png)
 
 ### Upload Process
-![Upload Process](path-to-your-upload-process-screenshot.png)
+![Upload Process] (https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/Urlpage.png)
 
 ---
 
