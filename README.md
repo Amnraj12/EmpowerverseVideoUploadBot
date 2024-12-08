@@ -204,10 +204,14 @@ password=<your_password>
 
 ---
 
-## 🧑‍💻 Author
+## 🙏 Acknowledgments
 
-- **Aman Raj**
-- Email: `amnraj125@gmail.com`
+This project was built using the following tools and resources:
+
+- Python and its vibrant open-source community.
+- Libraries like `yt_dlp`, `aiohttp`, and `tqdm`.
+- The Empowerverse platform for providing the API and inspiration.
+
 
 ---
 
