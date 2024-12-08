@@ -1,37 +1,38 @@
-<!-- README STARTS HERE -->
-
 # Empowerverse Video Bot
 
-A Python-based application with a graphical user interface (GUI) that allows users to:
-1. Log in to Empowerverse using their credentials.
-2. Automatically fetch their API token upon successful login.
-3. Provide an Instagram Reel URL for downloading and uploading the video to Empowerverse.
-4. Log out securely.
+A Python-based application with a graphical user interface (GUI) that simplifies video management. The bot allows users to log in, download Instagram Reels, and upload them to Empowerverse seamlessly.
 
 ---
 
-## 📋 **Features**
-- **Login & Logout**: Users log in with their Empowerverse credentials, and the bot fetches their API token for seamless integration.
+## 📋 Features
+
+- **Login & Logout**: 
+  - Secure login with Empowerverse credentials.
+  - Automatically fetch API tokens for a smooth workflow.
 - **Video Upload Workflow**:
-  - Download Instagram Reel videos.
-  - Upload the videos to Empowerverse using APIs.
-  - Automatically clean up local files after a successful upload.
-- **Async Operations**: High-performance concurrent operations using `asyncio` and `aiohttp`.
-- **Progress Tracking**: Visual progress bars for downloading and uploading, powered by `tqdm`.
+  - Download Instagram Reels videos.
+  - Upload videos to Empowerverse using APIs.
+  - Automatically clean up local files post-upload.
+- **Async Operations**: 
+  - High-performance tasks using `asyncio` and `aiohttp`.
+- **Progress Tracking**: 
+  - Visual progress bars for downloads/uploads powered by `tqdm`.
 
 ---
 
-## 🛠️ **Technology Stack**
+## 🛠️ Technology Stack
+
 - **Programming Language**: Python
 - **Libraries/Tools**:
-  - `tkinter`: GUI creation.
-  - `aiohttp`: For asynchronous API communication.
-  - `yt_dlp`: For downloading videos from Instagram.
-  - `tqdm`: For download/upload progress tracking.
+  - `tkinter` - GUI creation.
+  - `aiohttp` - Asynchronous API calls.
+  - `yt_dlp` - Download videos from Instagram.
+  - `tqdm` - Progress tracking for tasks.
 
 ---
 
-## 📂 **Project Structure**
+## 📂 Project Structure
+
 ```plaintext
 video-bot/
 ├── main.py                # Entry point for running the bot
@@ -40,10 +41,132 @@ video-bot/
 ├── video_uploader.py      # Logic for uploading videos to Empowerverse
 ├── requirements.txt       # Project dependencies
 └── README.md              # Documentation
-
 🚀 Setup Instructions
-1. Prerequisites
-- Python (>=3.8)
- 1. Install `pip`.
+Prerequisites
+Python (>= 3.8)
+Pip (Python package manager)
+Clone Repository
+bash
+Copy code
+git clone <repository-url>
+cd video-bot
+Install Dependencies
+bash
+Copy code
+pip install -r requirements.txt
+Run the Application
+Launch the bot using the following command:
 
-2. Clone Repository
+bash
+Copy code
+python main.py
+📝 Usage Guide
+Login:
+Enter your Empowerverse username and password.
+Click "Login". Upon success, the API token is fetched automatically.
+Provide Video URL:
+Paste the Instagram Reel URL into the input field.
+Optionally, provide a title for the video.
+Upload Video:
+Click "Upload to Empowerverse".
+The bot:
+Downloads the video.
+Uploads it to Empowerverse.
+Cleans up local files after a successful upload.
+Logout:
+Click "Logout" to return to the login screen and clear your session.
+
+🔄 Workflow Explanation
+Step 1: User Authentication
+User logs in with Empowerverse credentials.
+Bot fetches the Flic-Token via /user/token API.
+Step 2: Video Download
+yt_dlp fetches the video from the provided URL.
+Progress tracked using tqdm.
+Step 3: Video Upload
+Pre-signed upload URL retrieved via API.
+Video uploaded using aiohttp.
+Progress displayed with tqdm.
+Step 4: Post Creation
+Video post created on Empowerverse using video hash and title.
+Step 5: Cleanup
+Local files are deleted after successful upload.
+🌟 Key Libraries Used
+asyncio:
+
+Manages asynchronous operations like API calls and file uploads.
+aiohttp:
+
+Makes asynchronous HTTP requests for login, uploading videos, and creating posts.
+yt_dlp:
+
+Downloads Instagram Reels efficiently.
+tqdm:
+
+Provides progress bars for user-friendly tracking.
+🌐 API Reference
+1. User Login
+Endpoint: /user/token
+Method: GET
+Query Parameters:
+plaintext
+Copy code
+username=<your_username>
+password=<your_password>
+Response:
+json
+Copy code
+{
+  "token": "<Flic-Token>"
+}
+2. Get Upload URL
+Endpoint: /posts/generate-upload-url
+Method: GET
+Headers:
+json
+Copy code
+{
+  "Flic-Token": "<your_flic_token>",
+  "Content-Type": "application/json"
+}
+3. Upload Video
+Endpoint: <upload_url> (from Step 2)
+Method: PUT
+Body: Binary video file.
+4. Create Post
+Endpoint: /posts
+Method: POST
+Headers:
+json
+Copy code
+{
+  "Flic-Token": "<your_flic_token>",
+  "Content-Type": "application/json"
+}
+Body:
+json
+Copy code
+{
+  "title": "<video_title>",
+  "hash": "<video_hash>",
+  "is_available_in_public_feed": true,
+  "category_id": 25
+}
+❓ FAQ
+How do I fetch my Flic-Token?
+
+The bot automatically fetches your token upon login.
+What happens to my videos after upload?
+
+They are deleted from your local system after a successful upload.
+Why is my upload failing?
+
+Check:
+URL validity.
+Internet connection.
+Empowerverse credentials.
+🧑‍💻 Contributors
+Your Name
+Email: your-email@example.com
+⚠️ Disclaimer
+This project is intended for personal or educational use. Respect the terms of service of Empowerverse and Instagram.
