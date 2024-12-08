@@ -1,4 +1,4 @@
-# Empowerverse Video Bot
+# Empowerverse Video Upload Bot
 
 A Python-based application with a graphical user interface (GUI) that simplifies video management. The bot allows users to log in, download Instagram Reels, and upload them to Empowerverse seamlessly.
 
@@ -34,7 +34,7 @@ A Python-based application with a graphical user interface (GUI) that simplifies
 ## 📂 Project Structure
 
 ```plaintext
-video-bot/
+EmpowerverseVideoUploadBot/
 ├── main.py                # Entry point for running the bot
 ├── gui.py                 # GUI implementation
 ├── video_downloader.py    # Logic for downloading Instagram videos
@@ -150,7 +150,6 @@ Click **"Logout"** to return to the login screen and clear your session.
 - **Method**: GET
 - **Query Parameters**:
 ```
-plaintext
 username=<your_username>
 password=<your_password>
 ```
@@ -165,7 +164,8 @@ password=<your_password>
 - **Method**: GET
 - **Headers**:
   ```
-  { "Flic-Token": "<your_flic_token>", "Content-Type": "application/json" }
+  { "Flic-Token": "<your_flic_token>",
+    "Content-Type": "application/json" }
   ```
 
 ### 3. Upload Video
@@ -178,12 +178,16 @@ password=<your_password>
 - **Method**: POST
 - **Headers**:
   ```
-  { "Flic-Token": "<your_flic_token>", "Content-Type": "application/json" }
+  { "Flic-Token": "<your_flic_token>",
+    "Content-Type": "application/json" }
   ```
 
 - **Body**:
   ```
-  { "title": "<video_title>", "hash": "<video_hash>", "is_available_in_public_feed": true, "category_id": 25 }
+  { "title": "<video_title>",
+    "hash": "<video_hash>",
+    "is_available_in_public_feed": true,
+    "category_id": 25 }
   ```
 
 
