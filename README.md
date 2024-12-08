@@ -24,13 +24,13 @@ A Python-based application with a graphical user interface (GUI) that simplifies
 Here’s what the Empowerverse Video Bot looks like in action:
 
 ### Login Screen
-<img src="https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/a85858e1c95deeecc6ce428dce2a72487d3f343f/Login%20Screenshot.png" width="200">
+<img src="https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/a85858e1c95deeecc6ce428dce2a72487d3f343f/Login%20Screenshot.png" width="300">
 
 ### Main Screen
-<img src="https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/MainPage.png" width="200">
+<img src="https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/MainPage.png" width="300">
 
 ### Upload Process
-<img src="https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/Urlpage.png" width="200">
+<img src="https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/Urlpage.png" width="300">
 
 
 ---
