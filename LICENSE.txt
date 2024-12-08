@@ -1,0 +1,12 @@
+Copyright Aman Raj 2024
+
+All Rights Reserved.
+
+You are permitted to:
+- View and clone this repository for personal, non-commercial purposes.
+
+You are NOT permitted to:
+- Modify, redistribute, or create derivative works based on this code.
+- Use this repository or its contents for commercial purposes.
+
+For permissions beyond these terms, please contact amnraj125@gmail.com .
