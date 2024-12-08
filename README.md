@@ -150,12 +150,13 @@ Click **"Logout"** to return to the login screen and clear your session.
 - **Method**: GET
 - **Query Parameters**:
 ```
-username=<your_username> password=<your_password>
+username=<your_username>
+password=<your_password>
 ```
 
 - **Response**:
 ```
-json { "token": "<Flic-Token>" }
+{ "token": "<Flic-Token>" }
 ```
 
 ### 2. Get Upload URL
@@ -180,8 +181,9 @@ json { "token": "<Flic-Token>" }
   ```
 
 - **Body**:
-json { "title": "<video_title>", "hash": "<video_hash>", "is_available_in_public_feed": true, "category_id": 25 }
-
+  ```
+  { "title": "<video_title>", "hash": "<video_hash>", "is_available_in_public_feed": true, "category_id": 25 }
+  ```
 
 
 ---
@@ -202,9 +204,9 @@ json { "title": "<video_title>", "hash": "<video_hash>", "is_available_in_public
 
 ---
 
-## 🧑‍💻 Contributors
+## 🧑‍💻 Author
 
-- **AmanRaj**
+- **Aman Raj**
 - Email: `amnraj125@gmail.com`
 
 ---
