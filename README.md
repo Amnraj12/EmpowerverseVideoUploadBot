@@ -217,8 +217,14 @@ This project was built using the following tools and resources:
 - Libraries like `yt_dlp`, `aiohttp`, and `tqdm`.
 - The Empowerverse platform for providing the API and inspiration.
 
+## 📜 License
 
----
+This repository is protected under copyright law.  
+- You may view and clone this repository for personal, non-commercial use only.  
+- Modification, distribution, or commercial use is strictly prohibited.  
+
+For additional permissions, please contact `amnraj125@example.com`.
+
 
 ## ⚠️ Disclaimer
 
