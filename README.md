@@ -20,6 +20,21 @@ A Python-based application with a graphical user interface (GUI) that simplifies
 
 ---
 
+## 📸 Screenshots
+
+Here’s what the Empowerverse Video Bot looks like in action:
+
+### Login Screen
+![Login Screen](https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/a85858e1c95deeecc6ce428dce2a72487d3f343f/Login%20Screenshot.png)
+
+### Main Screen
+![Main Screen](path-to-your-main-screen-screenshot.png)
+
+### Upload Process
+![Upload Process](path-to-your-upload-process-screenshot.png)
+
+---
+
 ## 🛠️ Technology Stack
 
 - **Programming Language**: Python
