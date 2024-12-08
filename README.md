@@ -33,10 +33,14 @@ A Python-based application with a graphical user interface (GUI) that simplifies
 
 ## 📂 Project Structure
 
-plaintext video-bot/ ├── main.py # Entry point for running the bot ├── gui.py # GUI implementation ├── video_downloader.py # Logic for downloading Instagram videos ├── video_uploader.py # Logic for uploading videos to Empowerverse ├── requirements.txt # Project dependencies └── README.md # Documentation
-
-yaml
-Copy code
+```plaintext
+video-bot/
+├── main.py                # Entry point for running the bot
+├── gui.py                 # GUI implementation
+├── video_downloader.py    # Logic for downloading Instagram videos
+├── video_uploader.py      # Logic for uploading videos to Empowerverse
+├── requirements.txt       # Project dependencies
+└── README.md              # Documentation
 
 ---
 
@@ -67,8 +71,6 @@ Launch the bot using the following command:
 
 bash python main.py
 
-yaml
-Copy code
 
 ---
 
@@ -150,13 +152,10 @@ Click **"Logout"** to return to the login screen and clear your session.
 - **Query Parameters**:
 plaintext username=<your_username> password=<your_password>
 
-markdown
-Copy code
+
 - **Response**:
 json { "token": "<Flic-Token>" }
 
-markdown
-Copy code
 
 ### 2. Get Upload URL
 - **Endpoint**: `/posts/generate-upload-url`
@@ -164,8 +163,6 @@ Copy code
 - **Headers**:
 json { "Flic-Token": "<your_flic_token>", "Content-Type": "application/json" }
 
-markdown
-Copy code
 
 ### 3. Upload Video
 - **Endpoint**: `<upload_url>` (from Step 2)
@@ -178,13 +175,11 @@ Copy code
 - **Headers**:
 json { "Flic-Token": "<your_flic_token>", "Content-Type": "application/json" }
 
-markdown
-Copy code
+
 - **Body**:
 json { "title": "<video_title>", "hash": "<video_hash>", "is_available_in_public_feed": true, "category_id": 25 }
 
-yaml
-Copy code
+
 
 ---
 
@@ -206,11 +201,11 @@ Copy code
 
 ## 🧑‍💻 Contributors
 
-- **Your Name**
-- Email: `your-email@example.com`
+- **AmanRaj**
+- Email: `amnraj125@gmail.com`
 
 ---
 
 ## ⚠️ Disclaimer
 
-This project is intended for personal or educational use. Respect the terms of service of Empowerverse an
+This project is intended for personal or educational use.
