@@ -18,20 +18,20 @@ A Python-based application with a graphical user interface (GUI) that simplifies
 - **Progress Tracking**: 
   - Visual progress bars for downloads/uploads powered by `tqdm`.
 
----
 
 ## 📸 Screenshots
 
 Here’s what the Empowerverse Video Bot looks like in action:
 
 ### Login Screen
-![Login Screen](https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/a85858e1c95deeecc6ce428dce2a72487d3f343f/Login%20Screenshot.png)
+<img src="https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/a85858e1c95deeecc6ce428dce2a72487d3f343f/Login%20Screenshot.png" width="200">
 
 ### Main Screen
-![Main Screen](https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/MainPage.png)
+<img src="https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/MainPage.png" width="200">
 
 ### Upload Process
-![Upload Process] (https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/Urlpage.png)
+<img src="https://github.com/Amnraj12/EmpowerverseVideoUploadBot/blob/734ec1182dddcf9aaf0eda53fe262555192221af/Urlpage.png" width="200">
+
 
 ---
 
