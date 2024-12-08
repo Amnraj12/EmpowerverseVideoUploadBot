@@ -40,7 +40,8 @@ video-bot/
 ├── video_downloader.py    # Logic for downloading Instagram videos
 ├── video_uploader.py      # Logic for uploading videos to Empowerverse
 ├── requirements.txt       # Project dependencies
-└── README.md              # Documentation ```
+└── README.md              # Documentation
+```
 
 ---
 
