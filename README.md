@@ -1,6 +1,6 @@
 # Empowerverse Video Upload Bot
 
-A Python-based application with a graphical user interface (GUI) that simplifies video management. The bot allows users to log in, download Instagram Reels, and upload them to Empowerverse seamlessly.
+A Python-based application with a graphical user interface (GUI) designed to simplify video management. This bot enables users to seamlessly upload Instagram Reels directly to their Empowerverse account, eliminating the need for manual downloading and uploading.
 
 ---
 
